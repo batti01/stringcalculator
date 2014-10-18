@@ -5,7 +5,7 @@ public class Calculator {
 	
 
 	public static int add(String text){
-		if(text.startswith("\/\/"){
+		if(text.startswith("//"){
 		String delimiter = text.substring(2,3);
 		}
 		else{ String delimiter = ",|\n";
