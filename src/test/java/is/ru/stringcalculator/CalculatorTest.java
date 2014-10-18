@@ -44,4 +44,8 @@ public class CalculatorTest {
 	public void customDelimiter()throws exception{
 		assertEquals(3, Calculator.add("//;\n1,2");
 	}
+	@Test
+	public void customDelimiters()throws exception {
+		assertEquals(6, Calculator.add("//[**][%%%]\n1**2%%%3");
+	}
 }
