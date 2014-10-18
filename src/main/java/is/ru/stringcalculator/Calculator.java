@@ -15,7 +15,7 @@ public class Calculator {
 				{
 					if(i%2 != 0)
 					{
-						delimiter += delimiters[n];
+						delimiter += delimiters[i];
 						delimiter += "|";
 					}
 						
