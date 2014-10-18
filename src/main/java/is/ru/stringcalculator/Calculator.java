@@ -28,6 +28,10 @@ public class Calculator {
 			throw new Exception("Negative input");
 		}
 	}
+	for (String number : numbers){
+		if(toint(number > 1000) {
+			continue;}
+	}
         int total = 0;
         for(String number : numbers){
 		    total += toInt(number);
