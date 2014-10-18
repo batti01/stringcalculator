@@ -22,9 +22,13 @@ public class Calculator {
 	private static String[] splitNumbers(String numbers){
 	    return numbers.split(delimiter);
 	}
-      
-    private static int sum(String[] numbers){
- 	    int total = 0;
+    private static int sum(String[] numbers) throws Exception{
+        for (String number : numbers){
+		if(toInt(number) < 0)   {
+			throw new Exception("Negative input");
+		}
+	}
+        int total = 0;
         for(String number : numbers){
 		    total += toInt(number);
 		}

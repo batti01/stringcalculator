@@ -22,7 +22,7 @@ public class CalculatorTest {
 	@Test
 	public void testTwoNumbers() {
 		assertEquals(3, Calculator.add("1,2"));
-	}	
+	}
 
 	@Test
 	public void testMultipleNumbers(){
@@ -32,5 +32,8 @@ public class CalculatorTest {
 	public void testNewlineDelimited(){
 	assertEquals(3, Calculator.add("1\n2"));
 	}
-
+	@Test(expectedExceptions=Exeption.class)
+	public void negativeInputReturnsException() {
+		Calculator.add("-1");
+	}
 }
