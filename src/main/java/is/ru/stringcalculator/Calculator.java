@@ -2,9 +2,15 @@ package is.ru.stringcalculator;
 
 public class Calculator {
 	
-	private final String delimiter = ",|\n";
+	
 
 	public static int add(String text){
+		if(text.startswith("\/\/"){
+		String delimiter = text.substring(2,3);
+		}
+		else{ String delimiter = ",|\n";
+		}
+
 		if(text.equals("")){
 			return 0;
 		}

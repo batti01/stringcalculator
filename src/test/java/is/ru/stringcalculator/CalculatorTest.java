@@ -40,4 +40,8 @@ public class CalculatorTest {
 	public void largeInputsIgnored()throws exception {
 		assertEquals(10, Calculator.add("10,1001");
 	}
+	@Test
+	public void customDelimiter()throws exception{
+		assertEquals(3, Calculator.add("\/\/;\n1,2");
+	}
 }
