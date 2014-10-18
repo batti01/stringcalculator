@@ -5,8 +5,28 @@ public class Calculator {
 	
 
 	public static int add(String text){
+		String delimiter;
+		
 		if(text.startswith("//"){
-		String delimiter = text.substring(2,3);
+			if(text.contains([)
+			{
+				String[] delimiters = text.split([|]);
+				for(int i = 0; i < delimiters.length; i++)
+				{
+					if(i%2 != 0)
+					{
+						delimiter += delimiters[n];
+						delimiter += "|";
+					}
+						
+				}
+				delimiter += ",";
+			}
+			else
+			{
+				delimiter = text.substring(2,3);
+			}
+			
 		}
 		else{ String delimiter = ",|\n";
 		}
